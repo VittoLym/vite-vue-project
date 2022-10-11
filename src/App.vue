@@ -37,12 +37,12 @@ return numSearch ? true : numSearch == 0 ? true : false;
 <template>
   <h1>{{vittoLym}}</h1>
   <h2 :class="Counterclass"> {{Counter}}</h2>
-  <button class="button" @click="incrementor">aumentar</button>
-  <button class="button" @click="decremented">disminuir</button>
-  <button class="button" @click="restart">restart</button>
-  <div>
-    <button class="add" :disabled="noBtn" @click="mostrarNum">añadir</button>
-    <ul class="list-group mt-4" >
+  <button class="button button_responsive" @click="incrementor">aumentar</button>
+  <button class="button button_responsive" @click="decremented">disminuir</button>
+  <button class="button button_responsive" @click="restart">restart</button>
+  <div class="add_items">
+    <button class="button button_responsive " :disabled="noBtn" @click="mostrarNum">añadir</button>
+    <ul class="list-group mt-4 button_responsive" >
       <li v-for="( num ) in liNum" key="index" 
       class="list-group-item"
       >
@@ -51,32 +51,4 @@ return numSearch ? true : numSearch == 0 ? true : false;
   </div>
 </template>
 <style>
-
-h1{
-  padding-left: 50px;
-  color: rgba(255, 255, 255, 0.87);
-}
-h2{
-  padding-left: 40px;
-}
-.red{
-  color: red;
-}
-.green {
-  color: green;
-}
-.black{
-  color: black;
-}
-.add{
-  margin-top: 20px;
-  margin-left: 45px;
-}
-.list-group-item{
-  background-color: #242424;
-  color: #fafafa;
-  border: 1px solid #000;
-  left: 20px;
-}
-
 </style>

@@ -5,7 +5,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(255, 255, 255, 0.87), #f9f9f9 ;
   background-color: #242424;
 
   font-synthesis: none;
@@ -15,29 +15,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
   background-color: #242424;
@@ -45,7 +26,8 @@ body {
 
 h1 {
   font-size: 3.2em;
-  line-height: 1.1;
+  padding-left: 50px;
+  color: rgba(255, 255, 255, 0.87);
 }
 
 button {
@@ -66,18 +48,12 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
-.card {
-  padding: 2em;
-}
-
 #app {
   max-width: 1280px;
   margin: auto;
   padding: 40vh;
   text-align: center;
 }
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -90,11 +66,76 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+h2{
+  padding-left: 40px;
+}
+.red{
+  color: red;
+}
+.green {
+  color: green;
+}
+.black{
+  color: black;
+}
+.list-group{
+  margin-left: 20px;
+}
+.list-group-item{
+  background-color: #242424;
+  color: #fafafa;
+  border: 1px solid #000;
+  left: 0px;
+}
+.add_items{
+  margin-top: 4%;
+  margin-left: 6%;
+
+}
 .parrafo_de_prueba{
   background-color: #535bf2;
-
 }
 button{
   background-color: #1a1a1a;
   margin-left: 20px;
+}
+@media screen and (max-width: 930px) {
+    body{
+    background-color: #242424;
+    display: flex;
+    min-width: none;
+    height: auto;
+  }
+    #app{
+    padding: 10vh;
+    margin: 10vh 10vw;
+    display: flex;
+    flex-direction: column;
+    color: #f9f9f9;
+  }
+    .add_items{
+    display: flex;
+    flex-direction: column;  
+    margin-top: 0;
+    margin-left: 0px;
+  }
+    h1 {
+    font-size: 3.6em;
+    min-width: 277px;
+    padding-left: 20px;
+  }
+    .button_responsive{
+    margin-top: 3vh;
+    height: 10vh;
+    width: auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 411px){
+    h1{
+    min-width: 100px;
+    font-size: 2.6em;
+    padding-left: 0px;
+    margin-left: 40px;
+  }
 }
